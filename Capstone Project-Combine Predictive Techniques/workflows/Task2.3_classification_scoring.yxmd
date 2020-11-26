@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\julian\Downloads\p8_project_files\BM_trainingmodel.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>BM_trainingmodel.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Object" size="2147483647" source="R-DATA:SERIAL" type="Blob" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\julian\Downloads\p8_project_files\Classification_test_data.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Classification_test_data.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age0to9" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="Age10to17" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="Age18to24" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="Age25to29" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="Age30to39" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="Age40to49" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="Age50to64" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="Age65Plus" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="EdLTHS" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="EdHSGrad" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="EdSomeCol" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="EdAssociate" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="EdBachelor" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="EdMaster" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="EdProfSchl" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="EdDoctorate" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HHSz1Per" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HHSz2Per" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HHSz3Per" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HHSz4Per" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HHSz5PlusPer" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HHIncU25K" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HHInc25Kto50K" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HHInc50Kto75K" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HHInc75Kto100K" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HHInc100Kto150K" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HHInc150Kto250K" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HHInc250KPlus" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="PopAsian" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="PopBlack" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="PopHispanic" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="PopMulti" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="PopNativeAmer" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="PopOther" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="PopPacIsl" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="PopWhite" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HVal0to100K" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HVal100Kto200K" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HVal200Kto300K" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HVal300Kto400K" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HVal400Kto500K" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HVal500Kto750K" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="HVal750KPlus" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="PopDens" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="Double" />
+            <Field name="Type" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="Score">
+        <Position x="258" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">Predicted_Probability</Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="366" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\julian\AppData\Local\Temp\Engine_11356_5b80f0b638bb44329291d75265a56d29_\Engine_47036_c8d6c6f9a3324f8a9bc5066a0357d6ef_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="354" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Age0to9" selected="False" />
+            <SelectField field="Age10to17" selected="False" />
+            <SelectField field="Age18to24" selected="False" />
+            <SelectField field="Age25to29" selected="False" />
+            <SelectField field="Age30to39" selected="False" />
+            <SelectField field="Age40to49" selected="False" />
+            <SelectField field="Age50to64" selected="False" />
+            <SelectField field="Age65Plus" selected="False" />
+            <SelectField field="EdLTHS" selected="False" />
+            <SelectField field="EdHSGrad" selected="False" />
+            <SelectField field="EdSomeCol" selected="False" />
+            <SelectField field="EdAssociate" selected="False" />
+            <SelectField field="EdBachelor" selected="False" />
+            <SelectField field="EdMaster" selected="False" />
+            <SelectField field="EdProfSchl" selected="False" />
+            <SelectField field="EdDoctorate" selected="False" />
+            <SelectField field="HHSz1Per" selected="False" />
+            <SelectField field="HHSz2Per" selected="False" />
+            <SelectField field="HHSz3Per" selected="False" />
+            <SelectField field="HHSz4Per" selected="False" />
+            <SelectField field="HHSz5PlusPer" selected="False" />
+            <SelectField field="HHIncU25K" selected="False" />
+            <SelectField field="HHInc25Kto50K" selected="False" />
+            <SelectField field="HHInc50Kto75K" selected="False" />
+            <SelectField field="HHInc75Kto100K" selected="False" />
+            <SelectField field="HHInc100Kto150K" selected="False" />
+            <SelectField field="HHInc150Kto250K" selected="False" />
+            <SelectField field="HHInc250KPlus" selected="False" />
+            <SelectField field="PopAsian" selected="False" />
+            <SelectField field="PopBlack" selected="False" />
+            <SelectField field="PopHispanic" selected="False" />
+            <SelectField field="PopMulti" selected="False" />
+            <SelectField field="PopNativeAmer" selected="False" />
+            <SelectField field="PopOther" selected="False" />
+            <SelectField field="PopPacIsl" selected="False" />
+            <SelectField field="PopWhite" selected="False" />
+            <SelectField field="HVal0to100K" selected="False" />
+            <SelectField field="HVal100Kto200K" selected="False" />
+            <SelectField field="HVal200Kto300K" selected="False" />
+            <SelectField field="HVal300Kto400K" selected="False" />
+            <SelectField field="HVal400Kto500K" selected="False" />
+            <SelectField field="HVal500Kto750K" selected="False" />
+            <SelectField field="HVal750KPlus" selected="False" />
+            <SelectField field="PopDens" selected="False" />
+            <SelectField field="Type" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="438" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Predicted_Probability_1] &gt;= [Predicted_Probability_2] and [Predicted_Probability_1] &gt;= [Predicted_Probability_3]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Predicted_Probability_1] &gt;= [Predicted_Probability_2] and [Predicted_Probabilit...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="438" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Predicted_Probability_2] &gt;= [Predicted_Probability_1] AND [Predicted_Probability_2] &gt;= [Predicted_Probability_3]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Predicted_Probability_2] &gt;= [Predicted_Probability_1] AND [Predicted_Probabilit...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="438" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Predicted_Probability_3] &gt;= [Predicted_Probability_1] AND [Predicted_Probability_3] &gt;= [Predicted_Probability_2]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Predicted_Probability_3] &gt;= [Predicted_Probability_1] AND [Predicted_Probabilit...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="546" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="1" field="Cluster" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Cluster = 1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="546" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="2" field="Cluster" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Cluster = 2
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="546" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="3" field="Cluster" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Cluster = 3
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="750" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\julian\AppData\Local\Temp\Engine_11356_5b80f0b638bb44329291d75265a56d29_\Engine_47036_2cbfa5fc900b49b0b3319db6a0b963e0_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="846" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\julian\Downloads\p8_project_files\Scoring_results.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Scoring_results.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="654" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="750" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Predicted_Probability_1" selected="False" />
+            <SelectField field="Predicted_Probability_2" selected="False" />
+            <SelectField field="Predicted_Probability_3" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="True" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Task2.3_classification_scoring</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

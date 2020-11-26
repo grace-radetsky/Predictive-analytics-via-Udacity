@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storedemographicdata.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age0to9" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age10to17" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age18to24" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age25to29" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age30to39" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age40to49" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age50to64" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age65Plus" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdLTHS" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdHSGrad" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdSomeCol" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdAssociate" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdBachelor" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdMaster" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdProfSchl" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdDoctorate" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz1Per" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz2Per" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz3Per" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz4Per" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz5PlusPer" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHIncU25K" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc25Kto50K" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc50Kto75K" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc75Kto100K" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc100Kto150K" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc150Kto250K" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc250KPlus" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopAsian" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopBlack" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopHispanic" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopMulti" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopNativeAmer" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopOther" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopPacIsl" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopWhite" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal0to100K" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal100Kto200K" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal200Kto300K" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal300Kto400K" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal400Kto500K" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal500Kto750K" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal750KPlus" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopDens" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storedemographicdata.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\julian\Downloads\p8_project_files\storeinformation.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storeinformation.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+            <Field name="Zip" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+            <Field name="Type" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="246" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Store" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Store" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Age0to9" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_Age10to17" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_Age18to24" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_Age25to29" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_Age30to39" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_Age40to49" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_Age50to64" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_Age65Plus" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdLTHS" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdHSGrad" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdSomeCol" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdAssociate" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdBachelor" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdMaster" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdProfSchl" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_EdDoctorate" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHSz1Per" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHSz2Per" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHSz3Per" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHSz4Per" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHSz5PlusPer" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHIncU25K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHInc25Kto50K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHInc50Kto75K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHInc75Kto100K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHInc100Kto150K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHInc150Kto250K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HHInc250KPlus" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopAsian" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopBlack" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopHispanic" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopMulti" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopNativeAmer" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopOther" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopPacIsl" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopWhite" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HVal0to100K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HVal100Kto200K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HVal200Kto300K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HVal300Kto400K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HVal400Kto500K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HVal500Kto750K" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_HVal750KPlus" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Left_PopDens" selected="True" input="Left_" type="Double" size="8" />
+                <SelectField field="Right_Store" selected="False" rename="Right_Store" input="Right_" />
+                <SelectField field="Right_Address" selected="False" input="Right_" />
+                <SelectField field="Right_City" selected="False" input="Right_" />
+                <SelectField field="Right_State" selected="False" input="Right_" />
+                <SelectField field="Right_Zip" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="342" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Type</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-11-17 16:54:38</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Existing</Operand>
+              <StartDate>2020-11-17 16:54:38</StartDate>
+              <EndDate>2020-11-17 16:54:38</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Type] = "Existing"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="450" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\julian\Downloads\p8_project_files\classification_trainingdata.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>classification_trainingdata.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="450" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\julian\Downloads\p8_project_files\Classification_test_data.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Classification_test_data.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="False" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Task2.1_Preparingdataset</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

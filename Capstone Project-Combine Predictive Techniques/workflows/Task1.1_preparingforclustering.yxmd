@@ -1,0 +1,463 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storesalesdata.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Day" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Month" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Dry_Grocery" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Dairy" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Frozen_Food" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Meat" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Produce" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Floral" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Deli" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Bakery" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="General_Merchandise" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="246" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Year</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-11-16 21:18:07</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2015</Operand>
+              <StartDate>2020-11-16 21:18:07</StartDate>
+              <EndDate>2020-11-16 21:18:07</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Year] = "2015"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Dry_Grocery" selected="True" type="Double" size="8" />
+            <SelectField field="Dairy" selected="True" type="Double" size="8" />
+            <SelectField field="Frozen_Food" selected="True" type="Double" size="8" />
+            <SelectField field="Meat" selected="True" type="Double" size="8" />
+            <SelectField field="Produce" selected="True" type="Double" size="8" />
+            <SelectField field="Floral" selected="True" type="Double" size="8" />
+            <SelectField field="Deli" selected="True" type="Double" size="8" />
+            <SelectField field="Bakery" selected="True" type="Double" size="8" />
+            <SelectField field="General_Merchandise" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="330" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Store" action="GroupBy" rename="Store" />
+            <SummarizeField field="Dry_Grocery" action="Sum" rename="Sum_Dry_Grocery" />
+            <SummarizeField field="Dairy" action="Sum" rename="Sum_Dairy" />
+            <SummarizeField field="Frozen_Food" action="Sum" rename="Sum_Frozen_Food" />
+            <SummarizeField field="Meat" action="Sum" rename="Sum_Meat" />
+            <SummarizeField field="Produce" action="Sum" rename="Sum_Produce" />
+            <SummarizeField field="Floral" action="Sum" rename="Sum_Floral" />
+            <SummarizeField field="Deli" action="Sum" rename="Sum_Deli" />
+            <SummarizeField field="Bakery" action="Sum" rename="Sum_Bakery" />
+            <SummarizeField field="General_Merchandise" action="Sum" rename="Sum_General_Merchandise" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="414" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Sum_Dry_Grocery]+[Sum_Dairy]+[Sum_Frozen_Food]+[Sum_Meat]+[Sum_Produce]+[Sum_Floral]+[Sum_Deli]+[Sum_Bakery]+[Sum_General_Merchandise]" field="Total_store_sales" size="8" type="Double" />
+            <FormulaField expression="round([Sum_Dry_Grocery]*100/[Total_store_sales], 0.01)" field="Percent_Dry_Grocer" size="1073741823" type="V_WString" />
+            <FormulaField expression="round([Sum_Dairy]*100/[Total_store_sales],0.01)" field="Percent_Dairy" size="8" type="Double" />
+            <FormulaField expression="round([Sum_Frozen_Food]*100/[Total_store_sales], 0.01)" field="Percent_Frozen" size="8" type="Double" />
+            <FormulaField expression="round([Sum_Meat]*100/[Total_store_sales], 0.01)" field="Percent_Meat" size="8" type="Double" />
+            <FormulaField expression="round([Sum_Produce]*100/[Total_store_sales], 0.01)" field="Percent_Produce" size="8" type="Double" />
+            <FormulaField expression="round([Sum_Floral]*100/[Total_store_sales], 0.01)" field="Percent_Floral" size="8" type="Double" />
+            <FormulaField expression="round([Sum_Deli]*100/[Total_store_sales], 0.01)" field="Percent_Deli" size="8" type="Double" />
+            <FormulaField expression="round([Sum_Bakery]*100/[Total_store_sales], 0.01)" field="Percent_Bakery" size="8" type="Double" />
+            <FormulaField expression="round([Sum_General_Merchandise]*100/[Total_store_sales], 0.01)" field="Percent_Gen_Mer" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Total_store_sales = [Sum_Dry_Grocery]+[Sum_Dairy]+[Sum_Frozen_Food]+[Sum_Meat]+[...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="510" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Sum_Dry_Grocery" selected="False" />
+            <SelectField field="Sum_Dairy" selected="False" />
+            <SelectField field="Sum_Frozen_Food" selected="False" />
+            <SelectField field="Sum_Meat" selected="False" />
+            <SelectField field="Sum_Produce" selected="False" />
+            <SelectField field="Sum_Floral" selected="False" />
+            <SelectField field="Sum_Deli" selected="False" />
+            <SelectField field="Sum_Bakery" selected="False" />
+            <SelectField field="Sum_General_Merchandise" selected="False" />
+            <SelectField field="Percent_Dry_Grocer" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="222" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\julian\Downloads\p8_project_files\storeinformation.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storeinformation.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+            <Field name="Address" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+            <Field name="Zip" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+            <Field name="Type" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="342" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Address" selected="False" />
+            <SelectField field="City" selected="False" />
+            <SelectField field="State" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="630" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Store" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Store" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Store" selected="False" rename="Right_Store" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="714" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\julian\AppData\Local\Temp\Engine_54564_ed2b324249a64d78bdbc23261ef8ad02_\Engine_43268_2779a7b267014f83b29667abedec2d2a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="726" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\julian\Downloads\p8_project_files\store_categorical_sales.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>store_categorical_sales.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="414" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Type</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-11-16 21:46:27</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Existing</Operand>
+              <StartDate>2020-11-16 21:46:27</StartDate>
+              <EndDate>2020-11-16 21:46:27</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Type] = "Existing"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Task1.1_preparingforclustering</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

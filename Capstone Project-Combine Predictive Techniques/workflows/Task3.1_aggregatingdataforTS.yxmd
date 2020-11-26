@@ -1,0 +1,1020 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storesalesdata.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Day" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Month" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Dry_Grocery" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Dairy" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Frozen_Food" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Meat" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Produce" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Floral" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Deli" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="Bakery" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+            <Field name="General_Merchandise" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storesalesdata.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Day" selected="False" />
+            <SelectField field="Dry_Grocery" selected="False" />
+            <SelectField field="Dairy" selected="False" />
+            <SelectField field="Frozen_Food" selected="False" />
+            <SelectField field="Meat" selected="False" />
+            <SelectField field="Produce" selected="True" type="Double" size="8" description="Produce_sales" />
+            <SelectField field="Floral" selected="False" />
+            <SelectField field="Deli" selected="False" />
+            <SelectField field="Bakery" selected="False" />
+            <SelectField field="General_Merchandise" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="318" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Produce" action="Sum" rename="Existing_Monthly_Sales" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="414" y="6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\julian\AppData\Local\Temp\Engine_44384_c1448a67d3e5470ca37163cdc89b7fe6_\Engine_47036_c2f57d09c7da450798e5dcdc585acb09_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="210" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\julian\Downloads\p8_project_files\cluster_ID_stores.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>cluster_ID_stores.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Percent_Dry_Grocer" source="R-DATA:" type="Double" />
+            <Field name="Percent_Dairy" source="R-DATA:" type="Double" />
+            <Field name="Percent_Frozen" source="R-DATA:" type="Double" />
+            <Field name="Percent_Meat" source="R-DATA:" type="Double" />
+            <Field name="Percent_Produce" source="R-DATA:" type="Double" />
+            <Field name="Percent_Floral" source="R-DATA:" type="Double" />
+            <Field name="Percent_Deli" source="R-DATA:" type="Double" />
+            <Field name="Percent_Bakery" source="R-DATA:" type="Double" />
+            <Field name="Percent_Gen_Mer" source="R-DATA:" type="Double" />
+            <Field name="Cluster" source="R-DATA:" type="Int32" />
+            <Field name="Address" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+            <Field name="City" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+            <Field name="State" size="254" source="File: C:\Users\julian\Downloads\p8_project_files\storeinformation.csv" type="V_String" />
+            <Field name="Zip" size="1073741823" source="R-DATA:" type="V_WString" />
+            <Field name="Total_store_sales" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="330" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Store" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Store" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Store" selected="False" rename="Right_Store" input="Right_" />
+                <SelectField field="Right_Percent_Dry_Grocer" selected="False" input="Right_" />
+                <SelectField field="Right_Percent_Dairy" selected="False" input="Right_" />
+                <SelectField field="Right_Percent_Frozen" selected="False" input="Right_" />
+                <SelectField field="Right_Percent_Meat" selected="False" input="Right_" />
+                <SelectField field="Right_Percent_Produce" selected="False" input="Right_" />
+                <SelectField field="Right_Percent_Floral" selected="False" input="Right_" />
+                <SelectField field="Right_Percent_Deli" selected="False" input="Right_" />
+                <SelectField field="Right_Percent_Bakery" selected="False" input="Right_" />
+                <SelectField field="Right_Percent_Gen_Mer" selected="False" input="Right_" />
+                <SelectField field="Right_Cluster" selected="True" input="Right_" type="V_String" size="11" />
+                <SelectField field="Right_Address" selected="False" input="Right_" />
+                <SelectField field="Right_City" selected="False" input="Right_" />
+                <SelectField field="Right_State" selected="False" input="Right_" />
+                <SelectField field="Right_Zip" selected="False" input="Right_" />
+                <SelectField field="Right_Total_store_sales" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="414" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Store" action="GroupBy" rename="Store" />
+            <SummarizeField field="Cluster" action="GroupBy" rename="Cluster" />
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Produce" action="Sum" rename="Sum_Produce" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="498" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\julian\Downloads\p8_project_files\task3_existingstoresmonthlysales.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>task3_existingstoresmonthlysales.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1386" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">C:\Users\julian\Downloads\p8_project_files\TS_Forecast_results_newstores.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>TS_Forecast_results_newstores.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="498" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Cluster" action="GroupBy" rename="Cluster" />
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Sum_Produce" action="Avg" rename="Avg_Sum_Produce" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="666" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Cluster</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-11-18 22:55:29</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>1</Operand>
+              <StartDate>2020-11-18 22:55:29</StartDate>
+              <EndDate>2020-11-18 22:55:29</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Cluster] = "1"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="618" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Cluster</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-11-18 22:55:39</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>2</Operand>
+              <StartDate>2020-11-18 22:55:39</StartDate>
+              <EndDate>2020-11-18 22:55:39</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Cluster] = "2"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="618" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Cluster</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-11-18 22:55:47</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>3</Operand>
+              <StartDate>2020-11-18 22:55:47</StartDate>
+              <EndDate>2020-11-18 22:55:47</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Cluster] = "3"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings>
+        <Position x="738" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ETS_cluster1_newstores</Value>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="error_auto">False</Value>
+          <Value name="error_add">False</Value>
+          <Value name="error_mult">True</Value>
+          <Value name="trend_type_auto">False</Value>
+          <Value name="trend_type_add">False</Value>
+          <Value name="trend_type_mult">False</Value>
+          <Value name="trend_type_none">True</Value>
+          <Value name="trend_damp_auto">False</Value>
+          <Value name="trend_damp_yes">False</Value>
+          <Value name="trend_damp_no">True</Value>
+          <Value name="seas_auto">False</Value>
+          <Value name="seas_add">False</Value>
+          <Value name="seas_mult">True</Value>
+          <Value name="seas_none">False</Value>
+          <Value name="ic_auto">True</Value>
+          <Value name="ic_aic">False</Value>
+          <Value name="ic_aicc">False</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="series_start">True</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">3</Value>
+          <Value name="forecast_periods">12</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ETS.yxmc" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings>
+        <Position x="702" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ETS_cluster2_newstores</Value>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="error_auto">False</Value>
+          <Value name="error_add">False</Value>
+          <Value name="error_mult">True</Value>
+          <Value name="trend_type_auto">False</Value>
+          <Value name="trend_type_add">False</Value>
+          <Value name="trend_type_mult">False</Value>
+          <Value name="trend_type_none">True</Value>
+          <Value name="trend_damp_auto">False</Value>
+          <Value name="trend_damp_yes">False</Value>
+          <Value name="trend_damp_no">True</Value>
+          <Value name="seas_auto">False</Value>
+          <Value name="seas_add">False</Value>
+          <Value name="seas_mult">True</Value>
+          <Value name="seas_none">False</Value>
+          <Value name="ic_auto">True</Value>
+          <Value name="ic_aic">False</Value>
+          <Value name="ic_aicc">False</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="series_start">True</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">3</Value>
+          <Value name="forecast_periods">12</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ETS.yxmc" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings>
+        <Position x="702" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ETS_cluster3_newstores</Value>
+          <Value name="target_field">Avg_Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="error_auto">False</Value>
+          <Value name="error_add">False</Value>
+          <Value name="error_mult">True</Value>
+          <Value name="trend_type_auto">False</Value>
+          <Value name="trend_type_add">False</Value>
+          <Value name="trend_type_mult">False</Value>
+          <Value name="trend_type_none">True</Value>
+          <Value name="trend_damp_auto">False</Value>
+          <Value name="trend_damp_yes">False</Value>
+          <Value name="trend_damp_no">True</Value>
+          <Value name="seas_auto">False</Value>
+          <Value name="seas_add">False</Value>
+          <Value name="seas_mult">True</Value>
+          <Value name="seas_none">False</Value>
+          <Value name="ic_auto">True</Value>
+          <Value name="ic_aic">False</Value>
+          <Value name="ic_aicc">False</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="series_start">True</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">3</Value>
+          <Value name="forecast_periods">12</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ETS.yxmc" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings>
+        <Position x="834" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="forecast">Forecasted_avg_cluster1</Value>
+          <Value name="large_conf">95</Value>
+          <Value name="small_conf">80</Value>
+          <Value name="horizon">12</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" source="R-DATA:" type="Double" />
+            <Field name="Sub_Period" source="R-DATA:" type="Int32" />
+            <Field name="Forecasted_avg_cluster1" source="R-DATA:" type="Double" />
+            <Field name="Forecasted_avg_cluster1_high_95" source="R-DATA:" type="Double" />
+            <Field name="Forecasted_avg_cluster1_high_80" source="R-DATA:" type="Double" />
+            <Field name="Forecasted_avg_cluster1_low_80" source="R-DATA:" type="Double" />
+            <Field name="Forecasted_avg_cluster1_low_95" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Interactive Viz">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Forecast.yxmc" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings>
+        <Position x="786" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="forecast">forecasted_avg_cluster2</Value>
+          <Value name="large_conf">95</Value>
+          <Value name="small_conf">80</Value>
+          <Value name="horizon">12</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" source="R-DATA:" type="Double" />
+            <Field name="Sub_Period" source="R-DATA:" type="Int32" />
+            <Field name="forecasted_avg_cluster2" source="R-DATA:" type="Double" />
+            <Field name="forecasted_avg_cluster2_high_95" source="R-DATA:" type="Double" />
+            <Field name="forecasted_avg_cluster2_high_80" source="R-DATA:" type="Double" />
+            <Field name="forecasted_avg_cluster2_low_80" source="R-DATA:" type="Double" />
+            <Field name="forecasted_avg_cluster2_low_95" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Interactive Viz">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Forecast.yxmc" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings>
+        <Position x="786" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="forecast">forecasted_avg_cluster3</Value>
+          <Value name="large_conf">95</Value>
+          <Value name="small_conf">80</Value>
+          <Value name="horizon">12</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Period" source="R-DATA:" type="Double" />
+            <Field name="Sub_Period" source="R-DATA:" type="Int32" />
+            <Field name="forecasted_avg_cluster3" source="R-DATA:" type="Double" />
+            <Field name="forecasted_avg_cluster3_high_95" source="R-DATA:" type="Double" />
+            <Field name="forecasted_avg_cluster3_high_80" source="R-DATA:" type="Double" />
+            <Field name="forecasted_avg_cluster3_low_80" source="R-DATA:" type="Double" />
+            <Field name="forecasted_avg_cluster3_low_95" source="R-DATA:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Interactive Viz">
+          <RecordInfo>
+            <Field name="Text" size="2147483647" source="Report:Text:" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Report">
+          <RecordInfo>
+            <Field name="Report" size="1073741823" source="Report: (Multiple Sources)" type="V_WString" />
+            <Field name="Desc" size="64" source="Formula: (Multiple Sources)" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Forecast.yxmc" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="906" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Forecasted_avg_cluster1]*1" field="forecasted_total" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[forecasted_total = [Forecasted_avg_cluster1]*1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="894" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[forecasted_avg_cluster2]*6" field="forecasted_total" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[forecasted_total = [forecasted_avg_cluster2]*6
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="894" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[forecasted_avg_cluster3]*3" field="forecasted_total" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[forecasted_total = [forecasted_avg_cluster3]*3
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1038" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1134" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Period" selected="True" type="V_String" size="19" />
+            <SelectField field="forecasted_avg_cluster2" selected="False" />
+            <SelectField field="forecasted_avg_cluster2_high_95" selected="False" />
+            <SelectField field="forecasted_avg_cluster2_high_80" selected="False" />
+            <SelectField field="forecasted_avg_cluster2_low_80" selected="False" />
+            <SelectField field="forecasted_avg_cluster2_low_95" selected="False" />
+            <SelectField field="Forecasted_avg_cluster1" selected="False" />
+            <SelectField field="Forecasted_avg_cluster1_high_95" selected="False" />
+            <SelectField field="Forecasted_avg_cluster1_high_80" selected="False" />
+            <SelectField field="Forecasted_avg_cluster1_low_80" selected="False" />
+            <SelectField field="Forecasted_avg_cluster1_low_95" selected="False" />
+            <SelectField field="forecasted_avg_cluster3" selected="False" />
+            <SelectField field="forecasted_avg_cluster3_high_95" selected="False" />
+            <SelectField field="forecasted_avg_cluster3_high_80" selected="False" />
+            <SelectField field="forecasted_avg_cluster3_low_80" selected="False" />
+            <SelectField field="forecasted_avg_cluster3_low_95" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1218" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Period" action="GroupBy" rename="Period" />
+            <SummarizeField field="Sub_Period" action="GroupBy" rename="Sub_Period" />
+            <SummarizeField field="forecasted_total" action="Sum" rename="Sum_forecasted_total" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1302" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Sub_Period" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Sub_Period - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="True" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="True" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="True" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Task3.1_aggregatingdataforTS</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
