@@ -4,6 +4,7 @@ This repository contains my analytics projects as part of the Predictive Analyti
 ## Project Deliverables
 **1. [Project 1: Predicting Catalog Demand using a Linear Regression Model](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/tree/main/Project%201-%20Predicting%20Catalog%20Demand%20(using%20Linear%20Regression)/workflows)**
 - In this project, I analyzed a business problem in the mail-order catalog business. I predicted how much profits the company can expect to gain from sending out a catalog to new customers.
+Example visualizations include:
 ![](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/blob/main/P1-linear%20regression%20workflow.PNG)
 - Method: 
   - Build a linear regression model with variables contributed to past revenues. 
@@ -18,7 +19,8 @@ This repository contains my analytics projects as part of the Predictive Analyti
 - Artifacts: [Process and finding writeup](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/blob/main/Project%202%20-%20Data%20Wrangling/Project%202-Data%20Wrangling.pdf), [Alreryx workflow](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/tree/main/Project%202%20-%20Data%20Wrangling/workflows)
 
 **3. [Project 3: Predicting Default Risks using Classification Model](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/tree/main/Project%203%20-%20Predicting%20Default%20Risks%20(Classification%20Models))**
-- In this project, I used a classification model to algorithmically classify new customers on their creditworthiness. The outcome is a list of creditworthy customers submitted to the manager
+- In this project, I used a classification model to algorithmically classify new customers on their creditworthiness. The outcome is a list of creditworthy customers submitted to the manager.
+Example visualizations include:
 ![](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/blob/main/P3-Classification%20models%20ROC%20comparison.PNG)
 - Method:
   - Clean the data set by eliminating variables that have high percentages of missing values, low variability, or have no logical connection with the target variable
@@ -29,6 +31,7 @@ This repository contains my analytics projects as part of the Predictive Analyti
 
 **4. [Project 4: A/B Testing on A New Menu Launch](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/tree/main/Project%204%20-%20A:B%20Test%20a%20New%20Menu%20Launch)**
 - In this project, I analyzed a match-paired A/B test and write up a recommendation to management about whether a new menu should be launched in certain markets.
+Example visualizations include:
 ![](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/blob/main/P4-West-region-AB-test-result.png)
 - Method:
   - Use trend, seasonality, and average monthly sales from historical data as variables to match treatment stores with control stores. 
@@ -38,7 +41,7 @@ This repository contains my analytics projects as part of the Predictive Analyti
 
 **5. [Capstone Project: Combining Clustering, Classification Models, and Time Series Analysis](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/tree/main/Capstone%20Project-Combine%20Predictive%20Techniques)**
 - In this project, I grouped existing stores into different groups using a cluster model to manage inventory more effectively. Then I used a Boosted Model to group new stores into those formats. And use an ATS - time series analysis model to predict monthly sales in 2016 for both existing and new stores.
+Example visualizations include:
 ![](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/blob/main/viz%20clusters%20by%20location%20and%20sales%20size.png)
-
 - Tools: Alteryx, Tableau
 - Artifacts: [Process writeup](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/blob/main/Capstone%20Project-Combine%20Predictive%20Techniques/Capstone%20Project%20Submission.pdf), [Alteryx Workflow](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/tree/main/Capstone%20Project-Combine%20Predictive%20Techniques/workflows), [cleaned data sets](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/tree/main/Capstone%20Project-Combine%20Predictive%20Techniques/cleaned%20data%20sets)
