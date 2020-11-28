@@ -1,5 +1,5 @@
 # Predictive Analytics for Business Nanodegree, Udacity
-This repository contains my analytics projects as part of the Predictive Analytics for Business Nanodegree granted by Udacity
+This repository contains my analytics projects as part of the [Predictive Analytics for Business Nanodegree granted by Udacity](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/blob/main/Predictive%20Analytics_certi.pdf)
 
 ## Project Deliverables
 **1. [Project 1: Predicting Catalog Demand using a Linear Regression Model](https://github.com/grace-radetsky/Predictive-analytics-via-Udacity/tree/main/Project%201-%20Predicting%20Catalog%20Demand%20(using%20Linear%20Regression)/workflows)**
